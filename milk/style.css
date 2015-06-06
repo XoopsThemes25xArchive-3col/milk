@@ -1,0 +1,305 @@
+@import url(layout.css);
+@import url(blocks.css);
+@import url(content.css);
+
+
+/* ------ General styles ------ */
+
+html, body {
+	font-family: Tahoma, Arial, sans-serif;
+	line-height: 1.3em;
+	margin: 0px;
+	font-size: 12px;
+	color: #444444;
+	background: #02B0E6 url(images/bgj.jpg) top center repeat-x;
+}
+
+#xo-canvas-top {
+margin:0 auto;
+background: transparent url(images/toplinej.jpg) top center no-repeat;
+width: 1001px;
+height:26px;
+padding: 0;
+
+}
+
+#xo-canvas {
+margin:0 auto;
+background: #fff ;
+width: 1001px; 
+padding: 0;
+
+}
+
+table {
+	width: 100%;
+}
+
+table td {
+	padding: 0;
+	border-width: 0;
+	vertical-align: top;
+}
+
+img {
+	border: 0;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-weight: normal;
+	color:#939AA0;
+}
+
+a:hover {
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+input.button {
+ cursor: pointer;
+ background:none;
+}
+
+input[type=submit] {
+	FONT-SIZE: 12px;
+    PADDING-RIGHT: 0.5em;
+    PADDING-LEFT: 0.5em;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 1px;
+    BACKGROUND: #1FC0F5;
+    BACKGROUND-POSITION: bottom;
+    BACKGROUND-REPEAT: repeat-x;
+    COLOR: #fff;
+    CURSOR: pointer;
+    BORDER: 1px solid #0AADE2;
+}
+
+input[type=button] {
+    PADDING-RIGHT: 0.5em;
+    PADDING-LEFT: 0.5em;
+    PADDING-BOTTOM: 1px;
+    PADDING-TOP: 1px;
+    BACKGROUND: #1FC0F5;
+    COLOR: #fff;
+    CURSOR: pointer;
+    BORDER: 1px solid #0AADE2;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align:justify;
+}
+
+h1 {font-size: 1.4em; }
+h2 {font-size: 1.2em;}
+h3 {font-size: 1em;}
+h4 {font-size: 1em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
+
+
+/**************/
+
+#path {
+	width:902px;
+	text-align:left;
+	margin:0 auto;
+}
+
+#header {
+	background: #fff url(images/headerj.jpg) top center no-repeat;
+	width:1001px;
+	height:351px;
+	font-size:8px;
+	margin:0 auto;
+}
+
+#logo{
+font-family:"Trebuchet MS";
+font-size: 30px;
+line-height:300px;
+text-align:right;
+font-weight: bold;
+padding-right:50px;
+}
+
+#logo a{
+color: #fff;
+}
+
+#logo a:hover{
+text-decoration:none;
+}
+
+.pill_m {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  background:url(images/menu.gif) no-repeat;
+  width:1001px;
+  height: 55px;
+
+}
+
+
+#pillmenu {
+  margin: 0;
+  text-align: center;
+  padding: 0;
+}
+
+#pillmenu ul {
+  margin: 0;
+  list-style: none;
+}
+
+#pillmenu li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 40px;
+}
+
+* html #pillmenu ul { /*IE6 hack*/
+	padding-left:	20px;
+}
+
+*+html #pillmenu ul { /*IE7 hack*/
+	padding-left:	20px;
+}
+
+
+
+#pillmenu a {
+  	font-family: "Trebuchet MS";
+	font-size: 17px;
+	float: left;
+	display: block;
+	line-height: 55px;
+	padding: 0 17px 0 8px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+
+#pillmenu a:hover {
+  color: #fff;
+	text-decoration: underline;
+}
+
+#pillmenu a#active_menu-nav {
+}
+
+#bottom_bg {
+	background: url(images/bottom_bg.jpg) 0 100% repeat-x;
+	margin:0 auto;
+	width:902px;
+	height:10px;
+	font-size:8px;
+}
+
+#footer {
+text-align:center;
+margin:0 auto;
+padding: 0px;
+clear: both;
+background:url(images/footer.gif) center no-repeat;
+width:1001px;
+height:55px;
+line-height:80px;
+
+}
+
+#footer a{color:#fff; text-align:center;}
+
+
+/****************/
+
+
+/* ---------- Column left/right rules ---------- */
+
+#xo-canvas-rightcolumn {}
+#xo-canvas-rightcolumn a {}
+#xo-canvas-rightcolumn a:hover {}
+
+#xo-canvas-leftcolumn {}
+#xo-canvas-leftcolumn a {}
+#xo-canvas-leftcolumn a:hover {}
+
+/* ------ Main content ------ */
+
+
+/* lists */
+#xo-canvas-content ul {margin: 10px; padding: 5px; text-align: left;}
+#xo-canvas-content li {margin-left: 5px; color: #000; background-color: inherit; line-height: 1.4em; list-style:url(images/li.gif); }
+
+#xo-page {
+	padding: 0 .5em;
+	
+}
+
+/* ---------- Module display rules ---------- */
+
+#xo-content {
+	padding: 15px 15px;
+}
+
+/* ---------- Redirect ------------ */
+#xo-redirect {
+	margin: 40px 0;
+	margin-left: auto;
+	margin-right: auto;
+	width: 85%;
+	background-color: #f7e6bd;
+	color: #222;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	border: 2px solid #DDDDFF;
+}
+/* ---------- Site close ------------ */
+#xo-siteclose-login {
+	width: 270px;
+	margin-left: auto;
+	margin-right: auto; 	
+	border:1px solid #DDDDFF;	
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+#xo-siteclose-login h2 {
+	background-color: #f3ac03;
+	font-weight: bold;
+	font-size: 1em; 
+	color: white;
+	padding: 2px;	
+	margin-top: 0px;
+	margin-bottom: 0px;
+	text-align: center;	
+}
+#xo-siteclose-login form {
+	padding: 0px;
+	margin: 0px;	
+}
+#xo-siteclose-login div{
+	padding: 6px;
+}
+#xo-siteclose-login span.left {
+	float: left;
+	padding-bottom: 3px;
+}
+#xo-siteclose-login span.right {
+	float: right;
+	padding-right: 3px;
+	padding-bottom: 3px;
+}
+#xo-siteclose-login div.button {
+	text-align: right;
+	clear: both;	
+	padding-right: 0px;
+}
+
+
